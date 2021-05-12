@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="777.916" height="417.038" viewBox="0 0 777.916 417.038">
+  <g id="그룹_65" data-name="그룹 65" transform="translate(-3471 764.097)">
+    <g id="그룹_3" data-name="그룹 3" transform="translate(2080.361 -1645.05)" opacity="0.495">
+      <ellipse id="타원_1" data-name="타원 1" cx="147.917" cy="136.128" rx="147.917" ry="136.128" transform="translate(1390.639 1025.735)" fill="#ad7525"/>
+      <circle id="타원_2" data-name="타원 2" cx="99.455" cy="99.455" r="99.455" transform="translate(1440.133 1066.799)" fill="#d8982c"/>
+      <circle id="타원_3" data-name="타원 3" cx="50.378" cy="50.378" r="50.378" transform="translate(1489.521 1102.355)" fill="#fec031"/>
+    </g>
+    <g id="그룹_2" data-name="그룹 2" transform="translate(2132.299 -1444.623)">
+      <path id="패스_1" data-name="패스 1" d="M1840,804.351s177.354-203.82,551.955-73.027" transform="translate(-284.254 0)" fill="none" stroke="#d1d1d1" stroke-linecap="round" stroke-miterlimit="10" stroke-width="14"/>
+      <path id="패스_2" data-name="패스 2" d="M1347.121,1040.234a150.687,150.687,0,0,1,290.138,81.527" transform="translate(0 -139.997)" fill="#e5332a"/>
+    </g>
+  </g>
+</svg>
