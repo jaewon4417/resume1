@@ -422,6 +422,17 @@ label li:nth-child(5):hover a {
     left: 1200px;
     z-index: 5;
 }
+.ill2 .tree6 {
+    width: 230px;
+    position: relative;
+}
+
+.ill2 .tree6 img {
+    position: absolute;
+    top: 0px;
+    left: 1500px;
+    z-index: 5;
+}
 
 .ill2 .car {
     width: 230px;
@@ -496,6 +507,7 @@ label li:nth-child(5):hover a {
     animation: Trainani 7s both 3s infinite linear alternate;
 }
 
+
 /* about me */
 .article1 {
     text-align: center;
@@ -546,8 +558,11 @@ label li:nth-child(5):hover a {
     padding: 30px 0 0px 0;
 }
 .article1 .introduce > p {
-    font-size: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    font-family: 'Black Han Sans', sans-serif;
+    text-align: center;
+    line-height: 1.5em;
+    color: #867A6B;
 }
 
 /* .article1 .introduce > p:nth-child(2) {
@@ -679,6 +694,7 @@ body:hover span {
 }
 
 
+
 /* on off */
 .onoff {
     width: 100%;
@@ -726,6 +742,7 @@ body:hover span {
     background-color: #676767;
     border-radius: 50%;
     cursor: pointer;
+    cursor:30px;
 }
 
 .on_off_btn_box .off_btn {
@@ -734,6 +751,14 @@ body:hover span {
     background-color: #72845D;
     border-radius: 50%;
     cursor: pointer;
+}
+.clickme{
+    position: relative;
+}
+.clickme img{
+    width:300px;
+    position: absolute;
+    top:-100px; left:300px;
 }
 
 /* article2 스킬표*/
@@ -1156,6 +1181,12 @@ body:hover span {
 .webdesign img {
     width: 100%;
 }
+.webdesign_box h3 {
+    padding:20px 0 0px 0;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 25px;
+    color:#968282;
+}
 
 .close_btn {
     position: absolute;
@@ -1308,3 +1339,320 @@ body:hover span {
 .article4 .img>.car2 img {
     animation: Carani2 9s both 0.5s infinite;
 }
+/* footer 고양이 */
+#footer h2 {
+    font-size: 15rem;
+      text-align: center;
+      height:50vh;
+      line-height: 40vh;
+      color: #fff;
+      font-family: 'Niconne', cursive;
+      font-weight: 700;
+      text-shadow: 5px 5px 0px #eb452b, 
+                  10px 10px 0px #efa032, 
+                  15px 15px 0px #46b59b, 
+                  20px 20px 0px #017e7f, 
+                  25px 25px 0px #052939, 
+                  30px 30px 0px #AD9F8D, 
+                  35px 35px 0px #AD9F8D, 
+                  40px 40px 0px #AD9F8D, 
+                  45px 45px 0px #AD9F8D;
+}
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .footer {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #63ec85;
+  }
+  
+  .outer_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .wrapper {
+    position: absolute;
+    height: calc(100vh - 100px);
+    width: 100%;
+    top: 0;
+  }
+  
+  .ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(1, 143, 96);
+  }
+  
+  .cat {
+    position: absolute;
+    bottom: 65px;
+    left: 100px;
+    height: 30px;
+    width: 60px;
+    transition: 1.5s;
+    transform-origin: center;
+    background-color: transparent;
+  }
+  
+  /* body */
+  
+  .body {
+    position: absolute;
+    height: 30px;
+    width: 60px;
+  }
+  
+  .face_left .body { 
+    animation: turn_body_left forwards 0.5s;
+  }
+  
+  @keyframes turn_body_left {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(0.5, 1); }
+  }
+  
+  .face_right .body {
+    animation: turn_body_right forwards 0.5s;
+  }
+  
+  @keyframes turn_body_right {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(0.5, 1); }
+  }
+  
+  /* head */
+  .cat_head {
+    position: absolute;
+    height: 40px;
+    width: 48px;
+    right: -10px;
+    top: -30px;
+    transition: 0.5s;
+    z-index: 50;
+  }
+  
+  .first_pose .cat_head,
+  .face_left .cat_head{ 
+    right: 22px;
+  }
+  
+  
+  /* tail */
+  .tail {
+    position: absolute;
+    top: -25px;
+    height: 36px;
+    width: 15px;
+    animation: tail_motion forwards 2s;
+    transform-origin: bottom right;
+  }
+  
+  @keyframes tail_motion {
+    0%,100% { 
+      left: -5px;
+      transform: rotate(0deg) scale(1); 
+    }
+    50% { 
+      left: -10px;
+      transform: rotate(-50deg) scale(-1,1); 
+    }
+  }
+  
+  .first_pose .tail ,
+  .face_left .tail {
+    left: 45px;
+    animation: tail_motion_alt forwards 2s;
+  }
+  
+  @keyframes tail_motion_alt {
+    0%,100% { 
+      left: 45px;
+      transform: rotate(0deg) scale(1); 
+    }
+    50% { 
+      left: 40px;
+      transform: rotate(50deg) scale(-1,1); 
+    }
+  }
+  
+  
+  
+  /* legs */
+  .leg {
+    position: absolute;
+    height: 20px;
+    width: 10px;
+    transform-origin: top center;
+  }
+  
+  .front_legs,
+  .back_legs {
+    position: absolute;
+    height: 30px;
+    transition: 0.7s;
+  }
+  
+  .front_legs {
+    width: 30px;
+    right: 0;
+  }
+  
+  .back_legs {
+    width: 25px;
+    left: 0; 
+  }
+  
+  .face_left .leg svg {
+    transform: scale(-1,1);
+  }
+  
+  .face_right .front_legs{ right: 0; }
+  
+  .first_pose .front_legs,
+  .face_left .front_legs{ right: 30px; }
+  
+  .face_right .back_legs{ left: 0; }
+  
+  .first_pose .back_legs,
+  .face_left .back_legs{ left: 35px; }
+  
+  .one,
+  .three  {
+    bottom: -15px;
+    right: 0;
+  }
+  
+  .two, 
+  .four {
+    bottom: -15px;
+    left: 0px;
+  }
+  
+  .one.walk, 
+  .three.walk {
+    animation: infinite 0.3s walk;
+  }
+  
+  .two.walk, 
+  .four.walk {
+    animation: infinite 0.3s walk_alt;
+  }
+  
+  @keyframes walk {
+    0%,100% {transform: rotate(-10deg);}
+    50% {transform: rotate(10deg);}
+  }
+  
+  @keyframes walk_alt {
+    0%,100% {transform: rotate(10deg);}
+    50% {transform: rotate(-10deg);}
+  }
+  
+  
+  /* jump */
+  .cat_wrapper {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .cat_wrapper.jump .one { 
+    animation: infinite 0.3s walk;
+  }
+  
+  .cat_wrapper.jump .two { 
+    animation: infinite 0.3s walk_alt;
+  }
+  
+  .cat_wrapper.jump .three,
+  .cat_wrapper.jump .four {
+    animation: none;
+  }
+  
+  .cat_wrapper.jump .cat.face_right .back_legs {
+    transform-origin: center;
+    transform: rotate(50deg);
+  }
+  
+  .cat_wrapper.jump .cat.face_left .back_legs {
+    transform-origin: center;
+    transform: rotate(-50deg);
+  }
+  
+  .cat_wrapper.jump .cat.face_right .front_legs {
+    transform-origin: center;
+    transform: rotate(-60deg);
+  }
+  
+  .cat_wrapper.jump .cat.face_left .front_legs {
+    transform-origin: center;
+    transform: rotate(60deg);
+  }
+  
+  .cat_wrapper.jump{
+    animation: jump forwards 1s;
+  }
+  
+  @keyframes jump {
+    0%, 100%  {bottom: 0px;}
+    50% {bottom: 200px;}
+  }
+  
+  .jump .face_left{ 
+    animation: forwards 0.5s body_stand_left;
+    transform-origin: right bottom;
+  }
+  
+  .jump .face_right{ 
+    animation: forwards 0.5s body_stand_right;
+    transform-origin: left bottom;
+  }
+  
+  @keyframes body_stand_right {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-45deg);}
+  }
+  
+  @keyframes body_stand_left {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(45deg);}
+  }
+  
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+  
+  polygon.eyes {
+    fill: rgb(1, 143, 96);
+  }
+  
+  polygon,
+  path {
+    fill: white;
+  }
+  
+  .sign {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 10px;
+    font-size: 10px;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
