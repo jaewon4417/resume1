@@ -1,34 +1,20 @@
-$(document).ready(function(){
 
-    $('.nav .depth1 > li').on('click', function(){
-        $(this)
-        .addClass('on')
-        .siblings().removeClass('on')
+    $('label a').on('click', function(){
+        $(this).parent().addClass('on').siblings().removeClass('on')
+        $(this).parent().parent().prev().removeClass('on')
+        $('input:checkbox').each(function(){
+          this.checked = false
+        })
     })
-    var ww;
-    var wh;
-    function init(){
-        ww = $(window).width()
-        wh = $(window).height()
-        
-    }
-    
-    init()
-    
-    $(window).on('resize', function(){
-        init()
-    })
-    
-    
-    // var article3Near = $('.article3').offset().top - (wh/2+100)
-    
-    // $(window).on('scroll', function(){
-    // var sct = $(this).scrollTop()
-    
-    // })
-})
-// 마우스 
 
+    $('label').on('click', function(){
+      if ( $(this).find('input').prop('checked') ) {
+        $('.menu').addClass('on')
+        $('body, html').scrollTop(0)
+      } else {
+        $('.menu').removeClass('on')
+      }
+    })
 
 // about me button
 function onButtonClick() {
@@ -81,6 +67,7 @@ function closeWebDesignBox() {
 function openWebDesignBox() {
     $('.webdesign_bg').removeClass("blind")
 }
+
 // 고양이
 function init() { 
     const catWrapper = document.querySelector('.cat_wrapper')

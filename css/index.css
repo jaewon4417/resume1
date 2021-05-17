@@ -140,17 +140,17 @@ body {
 }
 
 label .menu {
-    position: absolute;
+    /* position: absolute; */
     right: -100px;
     top: -100px;
     z-index: 100;
     width: 200px;
     height: 200px;
-    background: #FFF;
+    background:#fff;
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
     cursor: pointer;
     position: fixed;
 }
@@ -193,8 +193,13 @@ label input {
     display: none;
 }
 
-label input:checked+.menu {
-    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+/* label input:checked+.menu {
+    box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
+    border-radius: 0;
+}
+
+label input:checked+.menu.on {
+    box-shadow: 0 0 0 0vw #fff, 0 0 0 0vh #fff;
     border-radius: 0;
 }
 
@@ -217,6 +222,33 @@ label input:checked+.menu .hamburger:before {
 
 label input:checked+.menu+ul {
     opacity: 1;
+} */
+
+
+.menu.on {
+    box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
+    border-radius: 0;
+}
+
+.menu.on .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.menu.on .hamburger:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+.menu.on .hamburger:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.menu.on+ul {
+    opacity: 1;
 }
 
 label ul {
@@ -227,8 +259,8 @@ label ul {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: 0;
-    -webkit-transition: .25s 0s ease-in-out;
-    transition: .25s 0s ease-in-out;
+    -webkit-transition: 0.25s 0.2s ease-in-out;
+    transition: 0.25s 0.2s ease-in-out;
 }
 
 label a {
@@ -259,6 +291,26 @@ label li:nth-child(4):hover a {
 }
 
 label li:nth-child(5):hover a {
+    color: #274591
+}
+
+label li:nth-child(1).on a {
+    color: #E5332A
+}
+
+label li:nth-child(2).on a {
+    color: #E8B831
+}
+
+label li:nth-child(3).on a {
+    color: #4F9BC4
+}
+
+label li:nth-child(4).on a {
+    color: #6E9953
+}
+
+label li:nth-child(5).on a {
     color: #274591
 }
 
@@ -1196,6 +1248,15 @@ body:hover span {
     color: #fff;
     cursor: pointer;
 }
+.webdesign3 button {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 20px;
+    background-color:#fff;
+    border: none;
+    padding:6px 6px 6px 6px;
+    margin-top: 10px;
+    color:#968282;
+}
 
 /* contect me */
 
@@ -1358,7 +1419,7 @@ body:hover span {
                   40px 40px 0px #AD9F8D, 
                   45px 45px 0px #AD9F8D;
 }
-}
+
 * {
     box-sizing: border-box;
   }
